@@ -4,7 +4,8 @@ import pyautogui
 import numpy as np
 from time import sleep
 
-pytesseract.pytesseract.tesseract_cmd = "C:\\Users\\U429604\\OneDrive - Danfoss\\Desktop\\Python\\Tesseract-OCR\\tesseract.exe"
+#Change with correct location
+pytesseract.pytesseract.tesseract_cmd = "\tesseract.exe"
 
 def take_screenshot():
     screenshot = pyautogui.screenshot()
@@ -86,7 +87,7 @@ def tripple_try(target):
 
 """
 """
-coord = tripple_try("nicolas")
+coord = tripple_try("42")
 pyautogui.moveTo(coord)
 print(coord)
 
